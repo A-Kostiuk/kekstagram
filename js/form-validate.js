@@ -1,13 +1,10 @@
-import { uploadModal, onModalEscKeyDown } from './upload-file.js'
+import { commentInput, hashtagsInput, onModalEscKeyDown } from './upload-form.js';
 
 const Hashtag = {
   MIN_LENGHT: 2,
   MAX_LENGHT: 20,
   MAX_COUNT: 5,
 }
-
-const commentInput = uploadModal.querySelector('.text__description');
-const hashtagsInput = uploadModal.querySelector('.text__hashtags');
 
 hashtagsInput.addEventListener('input', () => {
 
@@ -76,3 +73,5 @@ commentInput.addEventListener('ivalid', () => {
     commentInput.setCustomValidity('');
   }
 })
+
+export { commentInput, hashtagsInput}

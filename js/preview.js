@@ -1,4 +1,3 @@
-import { photos } from  './data.js';
 import { show } from './big_picture.js'
 
 const picturesContainer = document.querySelector('.pictures');
@@ -16,7 +15,7 @@ const createPhoto = (photo) => {
   return photoElement;
 }
 
-const renderPhotos = () => {
+const renderPhotos = (photos) => {
   const photosListFargment = document.createDocumentFragment();
   photos.forEach((photo) => {
     photosListFargment.appendChild(createPhoto(photo));

@@ -1,4 +1,4 @@
-import { uploadImage, uploadModal, sliderFieldset } from './upload-file.js';
+import { uploadImage, uploadModal, sliderFieldset, uploadForm } from './upload-form.js';
 
 const Effects = {
   chrome: {
@@ -35,7 +35,6 @@ const Effects = {
   },
 }
 
-const imgUploadForm = document.querySelector('#upload-select-image');
 const sliderElement = uploadModal.querySelector('.effect-level__slider');
 const sliderValue = uploadModal.querySelector('.effect-level__value');
 
@@ -67,7 +66,7 @@ const effectsChangeHandler = (evt) => {
   }
 }
 
-imgUploadForm.addEventListener('change', effectsChangeHandler)
+uploadForm.addEventListener('change', effectsChangeHandler)
 
 const createSlider = () => {
   noUiSlider.create(sliderElement, {

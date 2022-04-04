@@ -1,4 +1,4 @@
-import { uploadModal, uploadImage, scaleControlValue } from './upload-file.js'
+import { uploadModal, uploadImage, scaleControlValue } from './upload-form.js'
 
 const Scale = {
   MIN: 25,
