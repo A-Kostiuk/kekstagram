@@ -78,14 +78,13 @@ const show = (picture) => {
     renderComments(picture.comments.slice(0, currentCommentsStack));
     if (numberOfComments < currentCommentsStack) {
       commentsLoader.classList.add('hidden');
-    } else {
-      commentsLoader.addEventListener('click', onCommentsLoaderClick, { once: true });
     }
   }
+
   if (numberOfComments <= STACK_COMMENTS) {
     commentsLoader.classList.add('hidden');
   } else {
-    commentsLoader.addEventListener('click', onCommentsLoaderClick, { once: true });
+    commentsLoader.onclick = onCommentsLoaderClick;
   }
 }
 
