@@ -1,6 +1,5 @@
 import { renderPhotos } from './preview.js';
-import { setUploadFormSubmit } from './upload-form.js';
-import { closeUploadModal } from './upload-form.js';
+import { setUploadFormSubmit, closeUploadModal } from './upload-form.js';
 
 import './scaling.js';
 import './effects.js';
