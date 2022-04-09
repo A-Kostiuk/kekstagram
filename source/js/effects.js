@@ -1,4 +1,6 @@
 import { uploadImage, uploadModal, sliderFieldset, uploadForm } from './upload-form.js';
+import noUiSlider from 'nouislider';
+import 'nouislider/distribute/nouislider.css';
 
 const Effects = {
   chrome: {
